@@ -112,7 +112,7 @@ public class DatabaseWorker {
                             }
                         }
                     } else if (table.equalsIgnoreCase("fishs")) {
-                        result = ServerResult.create(new List(resultSet, Fish.class, connection));
+                        result = ServerResult.create(new List(resultSet, Fish.class));
                     }
                 } else {
                     System.out.println("Unknown table (" + table + ") for get()");
